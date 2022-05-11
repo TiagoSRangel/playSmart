@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Noto+Sans&family=Nunito&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(18,18,18);  
+    font-family: 'Nunito', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Login and Register */
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-main {
+    width: 65%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* ver esta ???? */
+}
+
+.panel-left {
+    color: white;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border-radius: 20PX;
+    background: #37006b;
+}
+
+.panel-left .titulologo {
+    font-size: 50px;
+}
+
+.logobig {
+    width: 400px;
+}
+
+.panel-right {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: rgb(32,32,32);
+    box-sizing: border-box; 
+}
+
+.form-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textfield, .selectimage{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box; /* div pai não passar a div filha */
+    background-color: rgb(32,32,32);
+    color: white;
+}
+
+.textfield, .selectimage > label {
+    margin-bottom: 6px;
+}
+
+.button {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.btn-panel {
+    color: white;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 14px 0px 20px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    font-size: 12pt;
+    background: #20bae9;
+    cursor: pointer;
+}
+
+.panel-right .astyle {
+    color: rgb(238 84 108);
+}
+
+.panel-right .astyle:hover {
+    color: rgb(33 186 233);
+}
+
+.error-text { 
+    color: #c70300;  
+    text-align: center;
+}
+
+/* Header */
+
+.menu-bg {
+    background-color: #37006b;
+}
+
+.menu {
+    max-width: 960px; /*permite que quando diminuimos a pagina os nossos items fiquem visiveis tambem devido ao margin 0 auto enquanto o width isso nao acontece*/
+    margin: 0 auto;
+    display: flex; /*os items ficam alinhados lado a lado*/
+    flex-wrap: wrap; /*os items vao para baixo do outro e não para baixo no seu container*/
+    justify-content: space-between; /*os items ficam com espaçamentos iguais*/
+    align-items: center; /*os items ficam alinhados ao centro entre o top e o bottom*/
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.menu-nav a {
+    color: white;
+    font-size: 1.25em;
+    padding: 10px;
+    display: block;
+}
+
+.menu-nav a:hover {
+    color:rgb(238 84 108)
+}
+
+.logosmall {
+    width: 85px;
+}
+
+.aimg {
+    width: 85px;
+    height: 85px;
+}
+/* Home */
+
+.content-width {
+    max-width: 960px;
+    margin: 30px auto;
+    color: white;   
+}
+.main {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.users-list {
+    width: 300px;
+}
+
+.users-list a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9a2eff;
+}
+
+.details {
+    margin-left: 20px;
+}
+
+.details .title {
+    margin-bottom: 10px;
+}
+
+.users-list .details-user {
+    margin:0px 10px 0px 10px ;
+}
+
+.profileimgsm { 
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.jogo p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.jogo:hover {
+    font-size: 20px;
+    color: #9a2eff;
+}
+
+/*Profile */
+
+.profile{
+    border-radius: 20px;
+    background: rgb(238,84,108);
+    background: linear-gradient(90deg, rgba(238,84,108,1) 0%, rgba(32,186,224,1) 100%);
+    width: 600px !important;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;    
+}
+
+.profile h1 {
+    margin: 20px;
+}
+
+.imgperfil .profileImg {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.username, .email {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.mainbackground {
+    border-radius: 20px;
+    background: rgb(238,84,108);
+    background: linear-gradient(90deg, rgba(238,84,108,1) 0%, rgba(32,186,224,1) 100%);
+    width: 600px !important;
+    margin: 30px auto 30px auto;
+}
+
+.formbackground {
+    padding: 30px;
+    margin: auto;
+}
+
+.formbackground label{
+    font-size: 20px;
+}
+
+.formbackground .image {
+    padding-top: 30px;
+}
+
+.formbackground .image input{
+    padding-top: 5px;
+}
+
+.btn-bg {
+    color: white;
+    padding: 10px 10px;
+    margin: 14px 0px 20px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    font-size: 12pt;
+    background: #20bae9;
+    cursor: pointer;
+}
+
+.image-bg { 
+    height: 90px;
+    width: 150px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.btl-logout {
+    position: fixed;
+    top: 100px;
+    right: 200px;
+    padding: 10px 10px;
+    margin: 14px 0px 20px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    font-size: 12pt;
+    background: rgb(238,84,108);
+    background: radial-gradient(circle, rgba(238,84,108,1) 0%, rgba(32,186,224,1) 100%);
+    cursor: pointer;
+}
+
+
